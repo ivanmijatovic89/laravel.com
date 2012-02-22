@@ -3,11 +3,11 @@
 			<div class="container">
 				<div class="row">
 					<ul class="span7">
-						<li><a href="<?php echo URL::to(); ?>">Home</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="<?php echo URL::home(); ?>">Home</a></li>
+						<li><a href="<?php echo URL::to('about'); ?>">About</a></li>
 						<li><a href="http://forums.laravel.com">Forums</a></li>
 						<li><a href="http://bundles.laravel.com">Bundles</a></li>
-						<li><a href="http://laravel.com/docs">Learn</a></li>
+						<li><a href="<?php echo URL::to('docs'); ?>">Learn</a></li>
 						<li class="download">
 							<a href="http://laravel.com/download">Download <i class="download"></i></a>
 						</li>

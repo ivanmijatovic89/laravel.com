@@ -40,24 +40,24 @@
 				<div class="navbar">
 					<div class="navbar-inner">
 						<div class="container" style="width: auto;">
-							<h1><a href="http://laravel.com">Laravel</a></h1>
+							<h1><a href="<?php echo URL::home(); ?>">Laravel</a></h1>
 
 							<div class="nav-collapse">
 								<ul class="nav pull-right">
-									<li><a href="<?php echo URL::to(); ?>">HOME</a></li>
-									<li><a href="<?php echo url('about'); ?>">ABOUT</a></li>
-									<li><a href="http://forums.laravel.com">FORUMS</a></li>
-									<li><a href="http://bundles.laravel.com">BUNDLES</a></li>
+									<li><a href="<?php echo URL::home(); ?>">Home</a></li>
+									<li><a href="<?php echo URL::to('about'); ?>">About</a></li>
+									<li><a href="http://forums.laravel.com">Forums</a></li>
+									<li><a href="http://bundles.laravel.com">Bundles</a></li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
+										<a href="<?php echo URL::to('docs'); ?>" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
-											<li><a href="#">SCREENCASTS</a></li>
+											<li><a href="<?php echo URL::to('docs'); ?>">Documentation</a></li>
+											<li><a href="http://www.screenr.com/user/laravel">Screencasts</a></li>
 											<li class="divider"></li>
-											<li><a href="http://laravel.com/api">DEVELOPER API</a></li>
+											<li><a href="http://laravel.com/api">Developer API</a></li>
 										</ul>
 									</li>
-									<li class="download"><a href="http://laravel.com/download">DOWNLOAD</a></li>
+									<li class="download"><a href="http://laravel.com/download">Download</a></li>
 								</ul>
 							</div><!-- /.nav-collapse -->
 						</div>
